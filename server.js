@@ -11,6 +11,8 @@ var passport = require("passport");
 require('dotenv').config();
 // Connect to the MongoDB database
 require('./config/database');
+// Configure passport middleware
+require("./config/passport");
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');

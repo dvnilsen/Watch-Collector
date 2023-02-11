@@ -31,10 +31,12 @@ passport.use(new GoogleStrategy(
   }
 ));
 
+// Tell passport how we find the user object (in the server side session)
 passport.serializeUser(function(user, cb) {
   cb(null, user._id);
 });
 
+// 
 passport.deserializeUser(async function(userId, cb) {
   cb(null, await User.findById(userId));
 });
