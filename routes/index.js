@@ -4,7 +4,7 @@ const passport = require('passport');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Watch Collector' });
 });
 
 router.get('/auth/google', passport.authenticate(
@@ -21,7 +21,7 @@ router.get('/oauth2callback', passport.authenticate(
   'google',
   {
     successRedirect: '/watches', // <--- NEED '/WATCHES' *******************************
-    // Change to what's best for YOUR app
+    // Change to what's best for YOUR app (will be root)
     failureRedirect: '/'
   }
 ));
