@@ -31,6 +31,10 @@ const reviewSchema = new Schema({
       type: String,
       required: true
     },
+    style: {
+        type: String,
+        required: true
+    }
 });
   
   module.exports = mongoose.model('Watch', watchSchema);
