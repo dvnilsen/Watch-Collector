@@ -1,10 +1,10 @@
-const Movie = require('../models/watch');
+const Watch = require('../models/watch');
 //const Performer = require('../models/band');
 
 module.exports = {
     index,
-    show,
-    new: newWatch
+    //show,
+    //new: newWatch
 };
 
 function index(req, res) {
@@ -13,24 +13,10 @@ function index(req, res) {
     });
   }
 
-  function show(req, res) {
-    Watch.findById(req.params.id)
-      //.populate('cast')
-      //.exec(function(err, movie) {
-        //Performer.find(
-          //{_id: {$nin: movie.cast}},
-          //function(err, performers) {
-            //console.log(performers);
-            res.render('watches/show', {
-              title: 'Watch Detail',
-              watch
-              //performers
-            });
-          }
-        //);
-      //});
-  //}
+//  function show(req, res) {
+//    res.render('watches/show', { title: 'Watch Collection' });
+//  }
 
-  function newWatch(req, res) {
-    res.render('watches/new', { title: 'Add Watch' });
-  }
+//  function newWatch(req, res) {
+//    res.render('watches/new', { title: 'Add Watch' });
+//  }

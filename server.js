@@ -16,6 +16,7 @@ require("./config/passport");
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var watchesRouter = require("./routes/watches"); 
 
 var app = express();
 
@@ -44,6 +45,8 @@ app.use(function(req, res, next) {
   res.locals.user = req.user;
   next();
 })
+
+app.use("/watches", watchesRouter); 
 
 // Mount method-override
 app.use(methodOverride('_method'));
