@@ -1,0 +1,21 @@
+<h2>Add A New Band To Your Watch</h2>
+
+<form id="udpate-band-info" action="/watches/<%= watchId %>/bands" method="POST">
+    <label>Material:
+        <select name="material">
+            <option value="Nylon">Nylon</option>
+            <option value="Leather">Leather</option>
+            <option value="Canvas">Canvas</option>
+            <option value="Rubber">Rubber</option>
+            <option value="Stainless Steel">Stainless Steel</option>
+            <option value="Gold Tone">Gold Tone</option>
+            <option value="Other">Other</option>
+          </select>
+    </label>
+    <label>Color:
+        <input type="text" name="color" required></input>
+    </label>
+    <input type="submit" value="Add Band">
+</form>
+
+<%- include('../partials/footer') %>

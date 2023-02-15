@@ -7,6 +7,9 @@ module.exports = {
 };
 
 function create(req, res){
+    req.body.user = req.user._id;
+    req.body.userName = req.user.name;
+    req.body.userAvatar = req.user.avatar;
     req.body.watch = req.params.id;
     Band.create(req.body, function(err, band) {
         res.redirect(`/watches/${req.params.id}`)
