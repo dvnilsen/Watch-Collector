@@ -1,10 +1,23 @@
 <%- include('../partials/header') %>
 
+<% if(user) { %>
 <section id="show-page">
     <div>Brand: </div>
     <div><%= watch.brand %></div>
     <div>Style: </div>
     <div><%= watch.style %></div>
+    <div>Dial Color: </div>
+    <div><%= watch.dialColor %></div>
+    <div>Case Material: </div>
+    <div><%= watch.caseMaterial %></div>
+    <div>Movement: </div>
+    <div><%= watch.movement %></div>
+    <div>Gender: </div>
+    <div><%= watch.gender %></div>
+    <div>Review: </div>
+    <div><%= watch.review %></div>
 </section>
+<% } %>
+
 
   <%- include('../partials/footer') %>

@@ -5,6 +5,11 @@
       <tr>
         <th>Brand</th>
         <th>Style</th>
+        <th>Dial Color</th>
+        <th>Case Material</th>
+        <th>Movement</th>
+        <th>Gender</th>
+        <th>Review</th>
         <th></th>
       </tr>
     </thead>
@@ -13,6 +18,12 @@
         <tr>
           <td><%= w.brand %></td>
           <td><%= w.style %></td>
+          <td><%= w.dialColor %></td>
+          <td><%= w.caseMaterial %></td>
+          <td><%= w.movement %></td>
+          <td><%= w.gender %></td>
+          <td><%= w.review %></td>
+
           <td><a href="/watches/<%= w._id %>">DETAILS</a></td>
         </tr>
         <% }); %>

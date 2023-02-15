@@ -25,13 +25,12 @@ function index(req, res) {
   }
 
   function create(req, res) {
-    for (let key in req.body) {
-        if (req.body[key] === '') delete req.body[key];
-    }
+    req.body.user = req.user._id;
+    req.body.userName = req.user.name;
+    req.body.userAvatar = req.user.avatar;
     const watch = new Watch(req.body);
     watch.save(function(err) {
       if (err) return res.redirect('/watches/new');
-      //console.log(watch);
       res.redirect(`/watches/${watch._id}`);
     });
   }
