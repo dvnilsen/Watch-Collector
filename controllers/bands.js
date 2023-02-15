@@ -22,6 +22,6 @@ function newBand(req, res){
  
 function deleteBand(req, res) {
     Band.findByIdAndDelete(req.params.id, function(err, band) {
-      res.redirect(`/watches/${band.watch._id}`);
+      res.redirect(`/watches/${req.params.id}`);
     });
   }
