@@ -9,4 +9,7 @@ router.get('/watches/:id/bands/new', ensureLoggedIn, bandsCtrl.new);
 
 router.post('/watches/:id/bands', ensureLoggedIn, bandsCtrl.create);
 
+// DELETE band
+//router.delete('/bands/:id', ensureLoggedIn, bandsCtrl.delete);
+
 module.exports = router;
