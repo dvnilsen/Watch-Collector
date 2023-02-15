@@ -1,5 +1,6 @@
 <%- include('../partials/header') %>
 
+<% if(user) { %>
 <h2>Click "Details" To See Watch Review & Band Information</h2>
 
 <table id="list">
@@ -29,5 +30,6 @@
         <% }); %>
       </tbody>
     </table>
+    <% } %>
   
 <%- include('../partials/footer') %>

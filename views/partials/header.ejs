@@ -12,7 +12,6 @@
     <a href="/">HOME or WHATEVER YOU WANT</a>
     <a href="/watches">WATCH COLLECTION</a>
     <% if (user) { %>
-       <!-- ******************* ADD PERFORMER LINK (THIS WILL PROBABLY BE BANDS) ************************* --> 
         <a href="/watches/new" <%- title === 'Add Watch' ? 'class="active"' : '' %>>ADD WATCH</a>
         <a href="/logout">LOG OUT</a>
       <% } else { %>

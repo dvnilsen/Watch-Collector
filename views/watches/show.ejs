@@ -19,12 +19,15 @@
         <div><%= b.material %></div>
         <div>Band Color:</div>
         <div><%= b.color %></div>
+        <form action="/bands/<%= b.id %>?_method=DELETE" method="POST">
+            <button type="submit">X</button>
+    </form>
         <% }); %>
     <div>Review: </div>
     <div><%= watch.review %></div>
 </section>
-<% } %>
 <br><br>
 <a href="/watches/<%= watch._id %>/bands/new"><button id="band">Add New Band To Your Watch</button></a>
+<% } %>
 
   <%- include('../partials/footer') %>

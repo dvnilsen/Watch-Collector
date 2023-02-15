@@ -10,6 +10,10 @@ const bandSchema = new Schema({
     color: {
         type: String,
         required: true
+    },
+    watch: {
+        type: Schema.Types.ObjectId,
+        ref: "Watch"
     }
 });
 
