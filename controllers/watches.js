@@ -1,5 +1,5 @@
 const Watch = require('../models/watch');
-//const Performer = require('../models/band');
+const Band = require('../models/band');
 
 module.exports = {
     index,
@@ -10,13 +10,15 @@ module.exports = {
 
 function index(req, res) {
     Watch.find({}, function(err, watches) {
-      res.render('watches/index', { title: 'All Watches', watches });
+      res.render('watches/index', { title: 'Your Collection', watches });
     });
   }
 
   function show(req, res) {
-    Watch.findById(req.params.id, function(err, watch){    
-        res.render('watches/show', {title: 'Watch Detail', watch});
+    Watch.findById(req.params.id, function(err, watch){   
+        Band.find({watch: watch._id}, function(err, bands) { 
+        res.render('watches/show', {title: 'Watch Detail', watch, bands});
+        });
     });
 }
 
