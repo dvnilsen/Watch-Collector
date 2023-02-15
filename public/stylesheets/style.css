@@ -101,7 +101,7 @@ table td {
 
 #list a {
   border-radius: 4px;
-  background-color: #B8C0C2;
+  background-color: #c1e3ff;
   padding: 4px;
   text-decoration: none;
   font-size: 14px;
@@ -199,4 +199,16 @@ li {
 
 .login img {
   height: 30px;
+}
+
+#band {
+  border-radius: 4px;
+  background-color: #c1e3ff;
+  padding: 4px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+#band:hover {
+  background-color: white;
 }
