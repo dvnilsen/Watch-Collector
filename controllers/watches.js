@@ -5,7 +5,8 @@ module.exports = {
     index,
     show,
     new: newWatch,
-    create
+    create,
+    edit
 };
 
 function index(req, res) {
@@ -17,6 +18,8 @@ function index(req, res) {
   function show(req, res) {
     Watch.findById(req.params.id, function(err, watch){   
         Band.find({watch: watch._id}, function(err, bands) { 
+            console.log(watch);
+            console.log(bands);
         res.render('watches/show', {title: 'Watch Detail', watch, bands});
         });
     });
@@ -34,5 +37,12 @@ function index(req, res) {
     watch.save(function(err) {
       if (err) return res.redirect('/watches/new');
       res.redirect(`/watches/${watch._id}`);
+    });
+  }
+
+  function edit(req, res) {
+    Watch.findOne({_id: req.params.id}, function(err, watch) {
+      if (err || !watch) return res.redirect('/watches');
+      res.render('watches/edit', {title: 'Edit Watch', watch});
     });
   }

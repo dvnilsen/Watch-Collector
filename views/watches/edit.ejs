@@ -1,0 +1,44 @@
+<%- include('../partials/header') %>
+
+<form id="new-form" action="/watches" method="POST">
+  <label>Brand:</label>
+  <input type="text" name="brand">
+  <label>Style:</label>
+  <select name="style">
+    <option value="Dress">Dress</option>
+    <option value="Diver">Diver</option>
+    <option value="Chronograph">Chronograph</option>
+    <option value="Casual">Casual</option>
+    <option value="Pilot/Field">Pilot/Field</option>
+    <option value="GMT">GMT</option>
+    <option value="Digital">Digital</option>
+  </select>
+  <label>Movement:</label>
+  <select name="movement">
+    <option value="Automatic">Automatic</option>
+    <option value="Quartz">Quartz</option>
+    <option value="Solar">Solar</option>
+  </select>
+  <label>Case Material:</label>
+  <select name="caseMaterial">
+    <option value="Stainless Steel">Stainless Steel</option>
+    <option value="PVD/DLC">PVD/DLC</option>
+    <option value="Titanium">Titanium</option>
+    <option value="Bronze">Bronze</option>
+    <option value="Gold Tone">Gold Tone</option>
+    <option value="Other">Other</option>
+  </select>
+  <label>Dial Color:</label>
+  <input type="text" name="dialColor">
+  <label>Gender:</label>
+  <select name="gender">
+    <option value="Mens">Mens</option>
+    <option value="Womens">Womens</option>
+    <option value="All Gender">All Gender</option>
+  </select>
+  <label>Review:</label>
+  <input type="text" name="review">
+  <input type="submit" value="Add Watch">
+</form>
+
+<%- include('../partials/footer') %>

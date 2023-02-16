@@ -19,7 +19,7 @@
         <div><%= b.material %></div>
         <div>Band Color:</div>
         <div><%= b.color %></div>
-        <form action="/bands/<%= b.id %>?_method=DELETE" method="POST">
+        <form action="/bands/<%= b._id %>?_method=DELETE" method="POST">
             <button type="submit">X</button>
     </form>
         <% }); %>

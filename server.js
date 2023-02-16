@@ -47,13 +47,13 @@ app.use(function(req, res, next) {
   next();
 })
 
+// Mount method-override
+app.use(methodOverride('_method'));
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use("/watches", watchesRouter); 
 app.use("/", bandsRouter);
-
-// Mount method-override
-app.use(methodOverride('_method'));
 
 
 // catch 404 and forward to error handler

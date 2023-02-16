@@ -17,4 +17,7 @@ router.get('/:id', watchesCtrl.show);
 // POST /watches (handle the new form being submitted)
 router.post('/', ensureLoggedIn, watchesCtrl.create);
 
+// GET /watches/:id/edit
+router.get("/:id/edit", watchesCtrl.edit);
+
 module.exports = router;
