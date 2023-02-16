@@ -18,9 +18,9 @@ router.get('/:id', watchesCtrl.show);
 router.post('/', ensureLoggedIn, watchesCtrl.create);
 
 // GET /watches/:id/edit
-router.get("/:id/edit", watchesCtrl.edit);
+router.get("/:id/edit", ensureLoggedIn, watchesCtrl.edit);
 
 //PUT /watches/:id
-router.put("/:id/", watchesCtrl.update);
+router.put("/:id/", ensureLoggedIn, watchesCtrl.update);
 
 module.exports = router;

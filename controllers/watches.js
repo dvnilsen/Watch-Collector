@@ -21,7 +21,7 @@ function index(req, res) {
         Band.find({watch: watch._id}, function(err, bands) { 
             console.log(watch);
             console.log(bands);
-        res.render('watches/show', {title: 'Watch Detail', watch, bands});
+        res.render('watches/show', {title: 'Watch Details', watch, bands});
         });
     });
 }

@@ -9,14 +9,14 @@
 </head>
 <body>
 <nav>
-    <a href="/">HOME or WHATEVER YOU WANT</a>
-    <a href="/watches">WATCH COLLECTION</a>
+    <a href="/">WELCOME</a>
     <% if (user) { %>
-        <a href="/watches/new" <%- title === 'Add Watch' ? 'class="active"' : '' %>>ADD WATCH</a>
-        <a href="/logout">LOG OUT</a>
-      <% } else { %>
-        <a href="/auth/google" class="login">LOG IN&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>
-      <% } %>
-    </nav>
-    <main>
-      <h1><%= title %></h1>
+      <a href="/watches">WATCH COLLECTION</a>
+      <a href="/watches/new" <%- title === 'Add Watch' ? 'class="active"' : '' %>>ADD WATCH</a>
+      <a href="/logout">LOG OUT</a>
+    <% } else { %>
+      <a href="/auth/google" class="login">LOG IN&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>
+    <% } %>
+  </nav>
+  <main>
+    <h1><%= title %></h1>

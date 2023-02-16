@@ -28,7 +28,11 @@
 </section>
 <br><br>
 <a href="/watches/<%= watch._id %>/bands/new"><button id="band">Add New Band To Your Watch</button></a>
-<a href="/watches/<%= watch._id %>/edit"><button id="edit">Edit Watch</button></a>
+<br><br>
+<section id="watch-update">
+<a href="/watches/<%= watch._id %>/edit"><button id="watch-edit">Edit Watch</button></a>
+<a href="/watches/<%= watch._id %>"><button id="watch-delete">Delete Watch</button></a>
+</section>
 <% } %>
 
   <%- include('../partials/footer') %>
