@@ -1,6 +1,6 @@
 <%- include('../partials/header') %>
 
-<form id="new-form" action="/watches" method="POST">
+<form id="edit-form" action="/watches/:id" method="POST">
   <label>Brand:</label>
   <input type="text" name="brand">
   <label>Style:</label>
@@ -38,7 +38,7 @@
   </select>
   <label>Review:</label>
   <input type="text" name="review">
-  <input type="submit" value="Add Watch">
+  <input type="submit" value="Edit Watch">
 </form>
 
 <%- include('../partials/footer') %>

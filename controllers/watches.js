@@ -6,7 +6,8 @@ module.exports = {
     show,
     new: newWatch,
     create,
-    edit
+    edit,
+    update
 };
 
 function index(req, res) {
@@ -45,4 +46,18 @@ function index(req, res) {
       if (err || !watch) return res.redirect('/watches');
       res.render('watches/edit', {title: 'Edit Watch', watch});
     });
+  }
+
+  function update(req, res) {
+    Watch.findOneAndUpdate(
+      {_id: req.params.id},
+      // update object with updated properties
+      req.body,
+      // options object with new: true to make sure updated doc is returned
+      {new: true},
+      function(err, watch) {
+        if (err || !watch) return res.redirect('/watches');
+        res.redirect(`/watches/${watch._id}`);
+      }
+    );
   }

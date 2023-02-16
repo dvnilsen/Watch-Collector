@@ -20,4 +20,7 @@ router.post('/', ensureLoggedIn, watchesCtrl.create);
 // GET /watches/:id/edit
 router.get("/:id/edit", watchesCtrl.edit);
 
+//PUT /watches/:id
+router.put("/:id/", watchesCtrl.update);
+
 module.exports = router;
