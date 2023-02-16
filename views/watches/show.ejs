@@ -14,21 +14,27 @@
     <div><%= watch.dialColor %></div>
     <div>Gender: </div>
     <div><%= watch.gender %></div>
+</section>
+<br>
+<section id="show-band">
     <% bands.forEach(function(b) { %>
         <div>Band Material:</div>
         <div><%= b.material %></div>
         <div>Band Color:</div>
         <div><%= b.color %></div>
         <form action="/bands/<%= b._id %>?_method=DELETE" method="POST">
-            <button type="submit">X</button>
+            <button id="delete-band" type="submit">Remove Band</button>
     </form>
         <% }); %>
+</section>
+<br>
+<section id="show-review">
     <div>Review: </div>
     <div><%= watch.review %></div>
 </section>
 <br><br>
 <a href="/watches/<%= watch._id %>/bands/new"><button id="band">Add New Band To Your Watch</button></a>
-<br><br>
+<br>
 <section id="watch-update">
 <a href="/watches/<%= watch._id %>/edit"><button id="watch-edit">Edit Watch</button></a>
 <a href="/watches/<%= watch._id %>"><button id="watch-delete">Delete Watch</button></a>

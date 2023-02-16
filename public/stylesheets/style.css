@@ -57,7 +57,7 @@ nav > a {
 
 nav > a:hover:not(.active) {
   color: white;
-  background-color: #424748;
+  background-color: steelblue;
 }
 
 nav > a.active {
@@ -83,6 +83,13 @@ nav > a.active {
   grid-column: span 2;
   width: 10rem;
   margin-left: auto;
+  border-radius: 4px;
+  background-color: rgba(10, 10, 10, .8);
+  padding: 4px;
+}
+
+#new-form input[type="submit"]:hover {
+  background-color: steelblue;
 }
 
 table {
@@ -103,16 +110,21 @@ table td {
   min-width: 100px;
 }
 
+#list {
+  border-radius: 5px;
+  background-color: rgba(10, 10, 10, 0.897);
+}
+
 #list a {
   border-radius: 4px;
-  background-color: #c1e3ff;
+  background-color: rgba(10, 10, 10, .8);
   padding: 4px;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 #list a:hover {
-  background-color: white;
+  background-color: steelblue;
 }
 
 #show-page {
@@ -207,38 +219,38 @@ li {
 
 #band {
   border-radius: 4px;
-  background-color: #c1e3ff;
+  background-color: rgba(10, 10, 10, .8);
   padding: 4px;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 #band:hover {
-  background-color: white;
+  background-color: steelblue;
 }
 
 #watch-edit {
   border-radius: 4px;
-  background-color: #c1e3ff;
+  background-color: rgba(10, 10, 10, .8);
   padding: 4px;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 #watch-edit:hover {
-  background-color: white;
+  background-color: steelblue;
 }
 
 #watch-delete {
   border-radius: 4px;
-  background-color: #c1e3ff;
+  background-color: rgba(10, 10, 10, .8);
   padding: 4px;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 #watch-delete:hover {
-  background-color: white;
+  background-color: steelblue;
 }
 
 #watch-update {
@@ -256,3 +268,48 @@ h2 {
   border: 10px solid rgba(10, 10, 10, 0.148);
   border-radius: 10px;
 }
+
+#new-form {
+  border-radius: 5px;
+  background-color: rgba(10, 10, 10, 0.897);
+}
+
+#show-page {
+  border-radius: 5px;
+  background-color: rgba(10, 10, 10, 0.897);
+  font-size: 22px;
+  padding: 4px;
+}
+
+#show-band {
+  border-radius: 5px;
+  background-color: rgba(10, 10, 10, 0.897);
+  font-size: 22px;
+  padding: 4px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1rem;
+}
+
+#show-review {
+  border-radius: 5px;
+  background-color: rgba(10, 10, 10, 0.897);
+  font-size: 22px;
+  padding: 4px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1rem;
+}
+
+#delete-band {
+  border-radius: 4px;
+  background-color: rgba(10, 10, 10, .8);
+  padding: 4px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#delete-band:hover {
+  background-color: steelblue;
+}
+

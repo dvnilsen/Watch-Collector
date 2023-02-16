@@ -10,8 +10,8 @@
 <body>
 <nav>
     <a href="/">WELCOME</a>
+    <a href="/watches">WATCH COLLECTION</a>
     <% if (user) { %>
-      <a href="/watches">WATCH COLLECTION</a>
       <a href="/watches/new" <%- title === 'Add Watch' ? 'class="active"' : '' %>>ADD WATCH</a>
       <a href="/logout">LOG OUT</a>
     <% } else { %>
