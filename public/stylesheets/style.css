@@ -79,6 +79,10 @@ nav > a.active {
   border-radius: 5px;
 }
 
+#new-form input {
+  color: black;
+}
+
 #new-form input[type="submit"] {
   grid-column: span 2;
   width: 10rem;
@@ -86,6 +90,7 @@ nav > a.active {
   border-radius: 4px;
   background-color: rgba(10, 10, 10, .8);
   padding: 4px;
+  color: white;
 }
 
 #new-form input[type="submit"]:hover {
@@ -259,14 +264,14 @@ li {
 
 h1 {
 background-color: rgba(10, 10, 10, 0.802);
-  border: 10px solid rgba(10, 10, 10, 0.148);
-  border-radius: 10px;
+  border: 5px solid rgba(10, 10, 10, 0.148);
+  border-radius: 7px;
 }
 
 h2 {
   background-color: rgba(10, 10, 10, 0.802);
-  border: 10px solid rgba(10, 10, 10, 0.148);
-  border-radius: 10px;
+  border: 5px solid rgba(10, 10, 10, 0.148);
+  border-radius: 7px;
 }
 
 #new-form {
@@ -313,3 +318,6 @@ h2 {
   background-color: steelblue;
 }
 
+textarea {
+  color: black;
+}
