@@ -23,4 +23,7 @@ router.get("/:id/edit", ensureLoggedIn, watchesCtrl.edit);
 //PUT /watches/:id
 router.put("/:id/", ensureLoggedIn, watchesCtrl.update);
 
+//DELETE 
+router.delete('/:id', ensureLoggedIn, watchesCtrl.delete);
+
 module.exports = router;

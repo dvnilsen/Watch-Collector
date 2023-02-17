@@ -33,11 +33,12 @@
     <div><%= watch.review %></div>
 </section>
 <br><br>
-<a href="/watches/<%= watch._id %>/bands/new"><button id="band">Add New Band To Your Watch</button></a>
-<br>
 <section id="watch-update">
-<a href="/watches/<%= watch._id %>/edit"><button id="watch-edit">Edit Watch</button></a>
-<a href="/watches/<%= watch._id %>"><button id="watch-delete">Delete Watch</button></a>
+<a href="/watches/<%= watch._id %>/bands/new"><button id="band">Add New Band To Your Watch</button></a>
+<a href="/watches/<%= watch._id %>/edit"><button id="watch-edit">Edit Your Watch</button></a>
+<form action="/watches/<%= watch._id %>?_method=DELETE" method="POST">
+    <button id="watch-delete" type="submit">Delete Your Watch</button>
+</form>
 </section>
 <% } %>
 

@@ -7,7 +7,8 @@ module.exports = {
     new: newWatch,
     create,
     edit,
-    update
+    update,
+    delete: deleteWatch
 };
 
 function index(req, res) {
@@ -61,3 +62,9 @@ function index(req, res) {
       }
     );
   }
+
+  function deleteWatch(req, res) {
+    Watch.findByIdAndDelete(req.params.id, function(err, watch) {
+      res.redirect(`/watches`);
+    });
+};

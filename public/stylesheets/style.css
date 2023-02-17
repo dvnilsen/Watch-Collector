@@ -258,10 +258,6 @@ li {
   background-color: steelblue;
 }
 
-#watch-update {
-  display: inline;
-}
-
 h1 {
 background-color: rgba(10, 10, 10, 0.802);
   border: 5px solid rgba(10, 10, 10, 0.148);
@@ -320,4 +316,10 @@ h2 {
 
 textarea {
   color: black;
+}
+
+#watch-update {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 2rem;
 }

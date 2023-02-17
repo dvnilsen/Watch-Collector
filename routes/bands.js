@@ -11,5 +11,5 @@ router.post('/watches/:id/bands', ensureLoggedIn, bandsCtrl.create);
 
 // DELETE band
 router.delete('/bands/:id', ensureLoggedIn, bandsCtrl.delete);
-
+    
 module.exports = router;
