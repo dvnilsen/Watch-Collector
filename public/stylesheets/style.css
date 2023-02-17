@@ -69,18 +69,20 @@ nav > a.active {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(2, minmax(auto, 22rem));
+  border: 7px solid rgba(10, 10, 10, .9);
 }
 
 #new-form *,
 #add-review-form *,
 #add-performer-form * {
-  font-size: 20px;
+  font-size: 22px;
   padding: 5px;
   border-radius: 5px;
 }
 
 #new-form input {
   color: black;
+  font-size: 20px;
 }
 
 #new-form input[type="submit"] {
@@ -118,6 +120,8 @@ table td {
 #list {
   border-radius: 5px;
   background-color: rgba(10, 10, 10, 0.897);
+  border: 7px solid rgba(10, 10, 10, .9);
+  font-size: 22px;
 }
 
 #list a {
@@ -280,6 +284,7 @@ h2 {
   background-color: rgba(10, 10, 10, 0.897);
   font-size: 22px;
   padding: 4px;
+  border: 7px solid rgba(10, 10, 10, .9);
 }
 
 #show-band {
@@ -290,6 +295,7 @@ h2 {
   display: grid;
   grid-template-columns: auto auto;
   grid-gap: 1rem;
+  border: 7px solid rgba(10, 10, 10, .9);
 }
 
 #show-review {
@@ -300,6 +306,7 @@ h2 {
   display: grid;
   grid-template-columns: auto auto;
   grid-gap: 1rem;
+  border: 7px solid rgba(10, 10, 10, .9);
 }
 
 #delete-band {
@@ -307,7 +314,7 @@ h2 {
   background-color: rgba(10, 10, 10, .8);
   padding: 4px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 #delete-band:hover {
@@ -322,4 +329,47 @@ textarea {
   display: grid;
   grid-template-columns: auto auto auto;
   column-gap: 2rem;
+}
+
+#update-band-info {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, minmax(auto, 22rem));
+  font-size: 22px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgba(10, 10, 10, .9);
+  border: 7px solid rgba(10, 10, 10, .9);
+}
+
+#update-band-info select {
+  color: black;
+  font-size: 20px;
+}
+
+#update-band-info input {
+  color: black;
+  font-size: 20px;
+}
+
+#update-band-info input[type="submit"] {
+  grid-column: span 2;
+  width: 10rem;
+  margin-left: auto;
+  border-radius: 4px;
+  background-color: rgba(10, 10, 10, .9);
+  padding: 4px;
+  color: white;
+}
+
+#update-band-info input[type="submit"]:hover {
+  background-color: steelblue;
+}
+
+td {
+  border: 2px solid rgb(195, 155, 115, .3);
+}
+
+th {
+  background-color: rgb(195, 155, 115, .2);
 }
