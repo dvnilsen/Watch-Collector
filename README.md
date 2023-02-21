@@ -5,16 +5,16 @@ Watch Collector is an app that allows users to store data about their watches an
 
 ## Screenshots
 Display Collection:
-![Index](https://imgur.com/0jC4BAZ "Index")
+![Index](https://i.imgur.com/0jC4BAZ.png "Index")
 
 Display Individual Watch Details & Review:
-![Detail](https://imgur.com/4CDOE9L "Detail")
+![Detail](https://i.imgur.com/4CDOE9L.png "Detail")
 
 Add New Watch:
-![Add](https://imgur.com/q9rqT89 "Add")
+![Add](https://i.imgur.com/q9rqT89.png "Add")
 
 Add New Band:
-![Band](https://imgur.com/naLh699 "Band")
+![Band](https://i.imgur.com/naLh699.png "Band")
 
 
 ## Technologies Used
