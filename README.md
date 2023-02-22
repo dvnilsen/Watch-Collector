@@ -30,10 +30,11 @@ Add New Band:
 - Visual Studio Code
 
 ## Getting Started
-Github Repo:
-https://github.com/dvnilsen/Watch-Collector
+Heroku URL:
+https://watch-collector-109.herokuapp.com/
 
-(Heroku deployment will be available soon)
+Trello:
+https://trello.com/b/jeD9OziY/project-2-crud 
 
 ## Next Steps
 Planned future improvements include:
